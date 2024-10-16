@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solek.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Solek Universe</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="images/solek.png">
+        <div class="social-icons">
+            <a href="https://youtube.com/Solek_X" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="https://vk.com/solek_yt" target="_blank"><img src="images/vk.png" alt="VK"></a>
+            <a href="https://t.me/solek_yt" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+        </div>
+    </div>
+
+    <div class="header">
+        <img src="images/solek.png" alt="Картинка">
+        <div>
+            <h1>Лучшие рецепты от</h1>
+            <h2>SOLEK</h2>
+        </div>
+        <img src="images/solek.png" alt="Картинка"> 
+    </div>
+
+    <div class="content">
+        <div class="block block-1">
+            <div class="text-content">
+                <h2>Мятый лёд</h2>
+                <p>Мятый лёд отлично сочетается с любым блюдом.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/ice.jpeg" alt="Картинка">
+            </div>
+        </div>
+
+        <div class="block block-2">
+            <div class="text-content">
+                <h2>Калучино</h2>
+                <p>Калучино из отборных семян акробатики придаёт заряд усталости даже самому доброму утру. </p>
+            </div>
+            <div class="image-content">
+                <img src="images/coffee.jpeg" alt="Картинка">
+            </div>
+        </div>
+
+        <div class="block block-3">
+            <div class="text-content">
+                <h2>Сахарный стейк</h2>
+                <p>Для тех, кто любит мясо с послевкусием «сладкой жизни».</p>
+            </div>
+            <div class="image-content">
+                <img src="images/steak.jpeg" alt="Картинка">
+            </div>
+        </div>
+
+        <div class="block block-4">
+            <div class="text-content">
+                <h2>Чесночное мороженое</h2>
+                <p>Свежесть льда и сила чеснока — идеальный дуэт для тех, кто хочет освежиться.</p>
+            </div>
+            <div class="image-content">
+                <img src="images/icecream.jpeg" alt="Картинка">
+            </div>
+        </div>
+    </div>
+
+    <div class="email-block">
+        <div class="text-content">
+            <h3>Получите дополнительный рецепт на email</h3>
+            <p id="initialText">Введите свой email и получите новый уникальный рецепт прямо в почтовый ящик.</p>
+            <form id="recipeForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe2DGMW4dYbBNocYCBBxECOPd5bV5gSbk5jhgqPLYs7qvacIQ/formResponse" method="POST" target="hidden_iframe">
+                <input type="email" id="email" name="entry.242237362" placeholder="Введите ваш Email" required><br><br>
+                <button id="submit-button" type="submit" disabled>Получить рецепт</button>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <p id="sending-text" style="display:none;">Отправка...</p>
+            <p id="thankYouMessage" style="display:none;">Спасибо! Ваш рецепт отправлен на указанный email.</p>
+        </div>
+        <div class="image-content">
+            <img id="loading-gif" src="images/loading.gif" alt="Загрузка">
+        </div>
+    </div>
+
+    <footer>
+        Автор: TeamDima
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
