@@ -6,7 +6,7 @@ var loadingGif = document.getElementById('loading-gif');
 var sendingText = document.getElementById('sending-text');
 var initialText = document.getElementById('initialText');
 
-// надо не забыть найти подходящее регулярное выражение
+// Валидация email
 emailInput.addEventListener('input', function() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(emailInput.value)) {
