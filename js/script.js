@@ -21,8 +21,7 @@ emailInput.addEventListener('input', function() {
 });
 
 // Обработка формы и анимация
-form.onsubmit = function(event) {
-    event.preventDefault();  // Предотвращаем стандартную отправку формы
+form.onsubmit = function() {
     initialText.style.display = 'none';  
     form.style.display = 'none';  
     loadingGif.style.display = 'block';  
@@ -32,5 +31,5 @@ form.onsubmit = function(event) {
         loadingGif.style.display = 'none';  
         sendingText.style.display = 'none';  
         thankYouMessage.style.display = 'block';  // Сообщение появляется с анимацией
-    }, 3000);  
+    }, 3000);  // Письмо будет отправлено, и через 3 секунды появится сообщение
 };
