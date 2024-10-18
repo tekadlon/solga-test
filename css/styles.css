@@ -217,9 +217,8 @@ footer {
 }
 
 #success-message {
-    color: #28a745;
+    color: green;
     font-size: 1.2rem;
     margin-top: 20px;
     display: none;
-    text-color: green;
 }
