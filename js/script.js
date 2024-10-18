@@ -6,9 +6,9 @@ var loadingGif = document.getElementById('loading-gif');
 var sendingText = document.getElementById('sending-text');
 var initialText = document.getElementById('initialText');
 
-// Регулярное выражение для валидации email
+// надо не забыть найти подходящее регулярное выражение
 emailInput.addEventListener('input', function() {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(emailInput.value)) {
         submitButton.disabled = false;
         submitButton.style.cursor = 'pointer';
@@ -20,7 +20,6 @@ emailInput.addEventListener('input', function() {
     }
 });
 
-// Обработка формы и анимация
 form.onsubmit = function() {
     initialText.style.display = 'none';  
     form.style.display = 'none';  
@@ -30,6 +29,6 @@ form.onsubmit = function() {
     setTimeout(function() {
         loadingGif.style.display = 'none';  
         sendingText.style.display = 'none';  
-        thankYouMessage.style.display = 'block';  // Сообщение появляется с анимацией
-    }, 3000);  // Письмо будет отправлено, и через 3 секунды появится сообщение
+        thankYouMessage.style.display = 'block';  
+    }, 3000);  
 };
