@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/solek.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>Solek Universe</title>
 </head>
 <body>
@@ -29,19 +27,8 @@
         <img src="images/solek.png" alt="Картинка"> 
     </div>
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/ice.jpeg" alt="Ice"></div>
-            <div class="swiper-slide"><img src="images/coffee.jpeg" alt="Coffee"></div>
-            <div class="swiper-slide"><img src="images/steak.jpeg" alt="Steak"></div>
-            <div class="swiper-slide"><img src="images/icecream.jpeg" alt="Ice Cream"></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-
     <div class="content">
-        <div class="block block-1" data-aos="fade-up">
+        <div class="block block-1">
             <div class="text-content">
                 <h2>Мятый лёд</h2>
                 <p>Мятый лёд отлично сочетается с любым блюдом.</p>
@@ -51,17 +38,17 @@
             </div>
         </div>
 
-        <div class="block block-2" data-aos="fade-right">
+        <div class="block block-2">
             <div class="text-content">
                 <h2>Калучино</h2>
-                <p>Калучино из отборных семян акробатики придаёт заряд усталости даже самому доброму утру.</p>
+                <p>Калучино из отборных семян акробатики придаёт заряд усталости даже самому доброму утру. </p>
             </div>
             <div class="image-content">
                 <img src="images/coffee.jpeg" alt="Картинка">
             </div>
         </div>
 
-        <div class="block block-3" data-aos="fade-left">
+        <div class="block block-3">
             <div class="text-content">
                 <h2>Сахарный стейк</h2>
                 <p>Для тех, кто любит мясо с послевкусием «сладкой жизни».</p>
@@ -71,7 +58,7 @@
             </div>
         </div>
 
-        <div class="block block-4" data-aos="fade-up">
+        <div class="block block-4">
             <div class="text-content">
                 <h2>Чесночное мороженое</h2>
                 <p>Свежесть льда и сила чеснока — идеальный дуэт для тех, кто хочет освежиться.</p>
@@ -103,21 +90,6 @@
         Автор: TeamDima
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        AOS.init();
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true,
-            autoplay: {
-                delay: 3000,
-            },
-        });
-    </script>
 </body>
 </html>
