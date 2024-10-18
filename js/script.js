@@ -6,7 +6,7 @@ var loadingGif = document.getElementById('loading-gif');
 var sendingText = document.getElementById('sending-text');
 var initialText = document.getElementById('initialText');
 
-// Регулярное выражение для проверки email
+// надо не забыть найти подходящее регулярное выражение
 emailInput.addEventListener('input', function() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(emailInput.value)) {
@@ -32,12 +32,3 @@ form.onsubmit = function() {
         thankYouMessage.style.display = 'block';  
     }, 3000);  
 };
-
-// Анимация появления блоков после загрузки страницы
-window.addEventListener('load', function() {
-    var blocks = document.querySelectorAll('.block');
-    blocks.forEach(function(block, index) {
-        block.style.animationDelay = (index * 0.3) + 's';
-        block.classList.add('fade-in');
-    });
-});
