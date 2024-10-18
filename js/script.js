@@ -6,7 +6,7 @@ var loadingGif = document.getElementById('loading-gif');
 var sendingText = document.getElementById('sending-text');
 var initialText = document.getElementById('initialText');
 
-// Валидация email
+// надо не забыть найти подходящее регулярное выражение
 emailInput.addEventListener('input', function() {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(emailInput.value)) {
@@ -20,7 +20,6 @@ emailInput.addEventListener('input', function() {
     }
 });
 
-// Поведение при отправке формы
 form.onsubmit = function() {
     initialText.style.display = 'none';  
     form.style.display = 'none';  
@@ -33,17 +32,3 @@ form.onsubmit = function() {
         thankYouMessage.style.display = 'block';  
     }, 3000);  
 };
-
-// Липкая панель навигации
-window.onscroll = function() {stickyNav()};
-
-var navbar = document.querySelector('.navbar');
-var sticky = navbar.offsetTop;
-
-function stickyNav() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
